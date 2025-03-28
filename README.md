@@ -1,5 +1,9 @@
 ## Hi there 👋
 
+My name is Maksim Vasić, I am a software developer currenty based in Novi Sad, Serbia 🇷🇸
+
+
+
 <!--
 **vasicm4/vasicm4** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 

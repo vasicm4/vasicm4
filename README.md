@@ -35,7 +35,7 @@
 
 ###
 
-<p align="left">I'm a software developer based in Novi Sad, Serbia<br><br>- 👨‍🎓 I’m currently studying at Faculty of Technical Sciences<br>- 📚 Besides my coursework, I continuously explore new technologies.<br>- ⚡ In my free time, I enjoy working out, reading philosophy, and spending time with like-minded people.</p>
+<p align="left">I'm a software developer based in Novi Sad, Serbia<br><br>- 👨‍🎓 I’m currently studying at Faculty of Technical Sciences<br>- 📚 Besides my coursework, I continuously explore new technologies.<br>- ⚡ In my free time, I enjoy working out, reading, and spending time with like-minded people.</p>
 
 ###
 

@@ -11,7 +11,6 @@ I'm a software developer based in Novi Sad, Serbia, focused on systems architect
 </p>
 
 - 👨‍🎓 **Student** at the Faculty of Technical Sciences (FTN)
-- 📚 **AI/ML:** Completed Karpathy’s "Zero to Hero" (GPT, Backprop, Tokenization)
 - 🛠️ **Systems:** Building LSM-Trees and high-performance C++ applications
 - ⚡ **Interests:** Weightlifting, reading, and architectural deep-dives
 
@@ -28,7 +27,6 @@ I'm a software developer based in Novi Sad, Serbia, focused on systems architect
 
 * **LSM-Tree Storage Engine** – Deep dive into database persistence and SSTables.
 * **Genetic Portfolio Optimizer** – C++ implementation of meta-heuristic optimization.
-* **MicroGPT** – Implementing and training custom LLM architectures.
 
 ---
 

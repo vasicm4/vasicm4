@@ -1,14 +1,13 @@
 ### 
 
-\<h1 align="center"\>Hey there, my name is Maksim 👋\</h1\>
+Hey there, my name is Maksim 👋
 
 ### 
 
-\<h3 align="left"\>👩‍💻 About Me\</h3\>
+👩‍💻 About Me
 
 ### 
 
-\<p align="left"\>
 I'm a software developer based in Novi Sad, Serbia, focused on building robust systems and exploring the frontiers of Machine Learning. I enjoy peeling back the layers of abstraction—whether that's implementing database internals from scratch or building transformers from first principles.
 <br><br>
 

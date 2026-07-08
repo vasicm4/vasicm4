@@ -38,12 +38,12 @@ I'm a software developer based in Novi Sad, Serbia, specializing in distributed 
 * **GAPortfolioOptimization** - GAPortfolioOptimization is a financial engineering tool built in C++ that leverages Genetic Algorithms and parallelism to solve the complex challenge of asset allocation. By simulating the process of natural selection, this tool evolves a population of portfolios to maximize the Sharpe Ratio, effectively balancing risk-adjusted returns.
 * **TrustAnchor PKI System** - TrustAnchor is a PKI system that manages the entire lifecycle of X.509 certificates, featuring Hierarchical CA structure, Secure key management, Certificate generation, renewal, and revocation, Multi-factor authentication (MFA), Role-based access control
 * **Visor Voom** - Visor Voom is a comprehensive ride-share management platform designed to streamline operations for riders, drivers, and administrators. The system provides end-to-end functionality including user authentication, profile management, driver and vehicle administration, ride booking and tracking, real-time communication, routing, reporting, and administrative controls. Built with a microservices-inspired architecture using Spring Boot for the backend and Angular for the frontend, Visor Voom delivers a scalable and maintainable solution for modern transportation services.
-
+* **PicoGPT** - PicoGPT is a completely transparent, from-scratch implementation of a generative Transformer architecture (nanoGPT) built using pure **NumPy** matrix operations.
+* 
 ### Future/in progress projects
 
 * **nickeldb** - NickelDB is a relational database engine built in rust
 * **omni-emr** - OmniEMR is an EMR used in a medical office
-* **PicoGPT** - PicoGPT is a completely transparent, from-scratch implementation of a generative Transformer architecture (nanoGPT) built using pure **NumPy** matrix operations.
 * **Insight Retrieval Synthesis (IRS)** - RAG system designed to analyze the psychology of investing and the "mind" of the market.
 * **governo** - Governo is an AI-powered simulation framework designed to help city councils and local governments make data-driven decisions through Synthetic Populations.
 

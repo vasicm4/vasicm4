@@ -2,7 +2,7 @@
 
 <p align="center">
   Software Engineering student at FTN Novi Sad · Software Engineer Apprentice at <b>WolkAbout</b><br/>
-  Systems programming · Data engineering · Distributed systems · AI agents
+  Systems programming · Data engineering · AI agents · Applied ML
 </p>
 
 <p align="center">
@@ -29,12 +29,21 @@
 ### Currently
 
 - **At WolkAbout:** validating industrial IoT ingestion pipelines with a device simulator, integrating OPC device services, and building an agentic AI workflow (LangChain + MCP) that grounds LLMs on live telemetry.
-- **Building:** Analyst, an agentic research engine in Go with hybrid retrieval (BM25 + vector search), MCP integrations and execution sandboxes.
 - **Learning:** orchestration and the big-data stack (Spark, Airflow, Scala).
+- **Open source:** merged contribution to [SuperPlane](https://github.com/superplanehq/superplane), an event-driven DevOps control plane.
 
 ---
 
 ### Selected projects
+
+#### AI agents & applied ML
+
+| Project | Description | Stack |
+| :--- | :--- | :--- |
+| [**the-analyst**](https://github.com/vasicm4/the-analyst) | CLI research assistant that reads a folder of academic papers, extracts claims into a typed schema with mandatory page pointers, detects contradictions between papers, re-runs headline numbers in a sandbox where data is public, and red-teams every logged conclusion. Bounded ReAct agent, BM25 + vector retrieval written from scratch with reciprocal rank fusion, file-based skills, MCP tool servers and a full eval harness for extraction accuracy, cost and latency. | Go · SQLite · MCP |
+| [**kws-accent-robustness**](https://github.com/vasicm4/kws-accent-robustness) | Measures the accuracy gap of a 99k-parameter keyword-spotting CNN on 19 consented Serbian-accented speakers versus Speech Commands, with paired speaker-bootstrap CIs. Few-shot fine-tuning recovers 1 point on held-out speakers at no cost on the official set. Shipped as ONNX + FastAPI at 0.19 ms p50 per clip. | PyTorch · MLflow · ONNX · Docker |
+| [**pico-gpt**](https://github.com/vasicm4/pico-gpt) | Decoder-only Transformer with hand-written backprop on the GPU: RMSNorm, RoPE, causal Grouped-Query Attention, SwiGLU and AdamW, gradients verified against a PyTorch reference. | Python · CuPy |
+| [**black-box-optimization**](https://github.com/vasicm4/black-box-optimization) | Genetic algorithm that tunes neural-network parameters when the error function has no analytic form. | Python |
 
 #### Systems & data
 
@@ -43,35 +52,25 @@
 | [**forkasm**](https://github.com/vasicm4/forkasm) | Sub-millisecond forking of running WebAssembly sandboxes for branching AI agents. | Rust · Wasmtime · Linux |
 | [**hnx-lake**](https://github.com/vasicm4/hnx-lake) | AWS data lake ingesting Hacker News and X streams through a Bronze → Silver → Gold Medallion architecture. | AWS · Python · SQL |
 | [**key-value-engine**](https://github.com/vasicm4/key-value-engine) | LSM-tree storage engine with segmented WAL, memtables, SSTables with Merkle validation, size-tiered compaction, LRU cache, Bloom filter, Count-Min Sketch and HyperLogLog. | Go |
-| [**aegis-iot**](https://github.com/vasicm4/aegis-iot) | Secure IoT ingestion microservices with hybrid encryption, message signing, rate limiting and Byzantine Fault Tolerant consensus to filter faulty sensors. | .NET 8 · Docker · Kubernetes |
-| [**IP-System**](https://github.com/vasicm4/IP-System) | Thread-safe, priority-aware task processing engine built on an async producer–consumer model. | C# |
+| [**aegis-iot**](https://github.com/vasicm4/aegis-iot) | Secure IoT ingestion microservices with hybrid encryption, message signing, rate limiting and Byzantine Fault Tolerant consensus to filter faulty sensors. | C# · .NET 8 · Kubernetes |
+| [**ip-system**](https://github.com/vasicm4/ip-system) | Thread-safe, priority-aware task processing engine built on an async producer–consumer model. | C# |
 
-#### AI, ML & quantitative finance
+#### Quantitative finance
 
 | Project | Description | Stack |
 | :--- | :--- | :--- |
-| [**pico-gpt**](https://github.com/vasicm4/pico-gpt) | Decoder-only Transformer with hand-written backprop on the GPU: RMSNorm, RoPE, causal Grouped-Query Attention, SwiGLU and AdamW, gradients verified against a PyTorch reference. | Python · CuPy |
 | [**futures-analysis**](https://github.com/vasicm4/futures-analysis) | Ten years of weekly WTI, Brent and NVIDIA prices: white-noise diagnostics (Ljung-Box, ADF, ARCH), AR(1) and random-walk models, half-life analysis and Monte Carlo simulation. Petnica Computational Finance Seminar. | Python · statsmodels |
 | [**portfolio-optimization**](https://github.com/vasicm4/portfolio-optimization) | Parallel genetic algorithm that evolves asset allocations to maximise the Sharpe ratio. | C++ |
-| [**black-box-optimization**](https://github.com/vasicm4/black-box-optimization) | Genetic algorithm that tunes neural-network parameters when the error function has no analytic form. | Python |
 
 #### Backend & full-stack
 
 | Project | Description | Stack |
 | :--- | :--- | :--- |
-| [**visor-inc-voom**](https://github.com/vasicm4/visor-inc-voom) | Cross-platform ride-sharing system with real-time location tracking, driver–passenger matching, JWT auth and end-to-end tests. | Spring Boot · PostgreSQL · WebSockets · Angular |
+| **OmniEMR** | Electronic medical records system for a medical office. | |
+| [**visor-inc-voom**](https://github.com/vasicm4/visor-inc-voom) | Cross-platform ride-sharing system with real-time location tracking, driver–passenger matching, JWT auth and end-to-end tests. Team project. | Spring Boot · PostgreSQL · WebSockets · Angular |
 | [**chaotic-cupid**](https://github.com/vasicm4/chaotic-cupid) | Real-time matchmaking simulation: a background worker scores and pairs users, and a SignalR hub delivers acknowledged messages. | .NET 9 · SignalR |
 
-Also built: TrustAnchor (X.509 PKI with hierarchical CAs, MFA and RBAC) and Graph Visualiser (plugin-based graph explorer).
-
----
-
-### In progress
-
-- **Analyst** – agentic research engine for extracting and backtesting econometric strategies
-- **NickelDB** – relational database engine in Rust
-- **Governo** – simulation framework using synthetic populations to help local governments test policy decisions
-- **OmniEMR** – electronic medical records system for a medical office
+Also built: TrustAnchor (X.509 PKI with hierarchical CAs and MFA), a Git-style version control system in Go, a PDF search engine with trie autocomplete and graph-based ranking, and a minimax checkers AI.
 
 ---
 
@@ -79,9 +78,9 @@ Also built: TrustAnchor (X.509 PKI with hierarchical CAs, MFA and RBAC) and Grap
 
 | Area | Technologies |
 | :--- | :--- |
-| **Languages** | Rust · Go · Python · Java · SQL · C++ · C# · TypeScript |
+| **Languages** | Go · Rust · Python · Java · SQL · C++ · C# · TypeScript |
 | **Systems** | WebAssembly · Wasmtime · Linux memory management · concurrency · storage engines |
-| **Data** | ETL · Medallion architecture · PostgreSQL · Apache Druid · time-series analysis · vector databases |
+| **Data** | ETL · Medallion architecture · PostgreSQL · SQLite · Apache Druid · time-series analysis |
 | **Cloud & infra** | AWS · GCP · Docker · Kubernetes · CI/CD |
-| **Backend** | Spring Boot · .NET Core · gRPC · REST · WebSockets · SignalR |
-| **AI / ML** | PyTorch · NumPy · CuPy · LangChain · MCP · RAG · genetic algorithms |
+| **Backend** | Spring Boot · .NET Core · FastAPI · gRPC · REST · WebSockets · SignalR |
+| **AI / ML** | PyTorch · CuPy · ONNX · MLflow · LangChain · MCP · RAG · agent evaluation |

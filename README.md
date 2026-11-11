@@ -1,52 +1,87 @@
-<h1 align="center">Hey there, my name is Maksim 👋</h1>
+<h1 align="center">Maksim Vasić</h1>
 
-### 
-
-<h3 align="left"> A bit about me</h3>
-
-<p align="left">
-I'm a software developer based in Novi Sad, Serbia, specializing in distributed systems, full-stack web applications, AI/ML engineering, data engineering, and systems architecture. I build scalable infrastructure, intelligent systems, and end-to-end solutions—from database engines and AI agents to real-time processing platforms and cloud-native applications.
+<p align="center">
+  Software Engineering student at FTN Novi Sad · Software Engineer Apprentice at <b>WolkAbout</b><br/>
+  Systems programming · Data engineering · Distributed systems · AI agents
 </p>
 
-- Student at the Faculty of Technical Sciences (FTN) 
-- Apprentice at WolkAbout
-- **Systems:** Passionate about building distributed systems and high-performance applications
-- **AI/ML:** Developing genetic algorithms, RAG systems and AI models from scratch
-- **Cloud & Data:** AWS-based data platforms, ETL pipelines, and stream processing
-- **Full-Stack:** .NET/SignalR applications, real-time web interfaces, and platform engineering tools
-- **Interests:** Weightlifting, reading, architectural deep-dives, and open-source contributions
+<p align="center">
+  <a href="https://vasicm4.github.io">Portfolio</a> ·
+  <a href="https://www.linkedin.com/in/maksim-vasic-066762245/">LinkedIn</a> ·
+  <a href="https://leetcode.com/u/vasicm4/">LeetCode</a>
+</p>
 
-### Technical Toolbox
+---
 
-| Category | Technologies |
+### Spotlight: forkasm
+
+**[forkasm](https://github.com/vasicm4/forkasm)** is a Rust library that forks a *running* WebAssembly sandbox (memory, globals, WASI state and filesystem) in about **100 µs**, many ways and many levels deep, so an AI agent can branch mid-task, explore alternatives in parallel and keep the best path.
+
+- **99 µs** median fork for a 64 MiB sandbox: 6.3× faster than a process `fork()` and roughly 1,500× faster than published VM-branching systems
+- Fork cost scales with pages written, not memory size: a 1 GiB sandbox still spawns in 54 µs, and idle branches cost under 1 KiB
+- Copy-on-write memfd layers with dirty-page tracking via userfaultfd write-protect and `PAGEMAP_SCAN`, plus an in-crate, fully clonable WASI implementation
+- Forks a CPython interpreter between statements in under 1 ms; the demo runs 8 competing approaches in parallel and keeps the fastest correct one
+
+[Repository](https://github.com/vasicm4/forkasm) · [Benchmarks](https://github.com/vasicm4/forkasm/blob/main/BENCHMARKS.md) · [Blog post](https://vasicm4.github.io/#/blog/forkasm)
+
+---
+
+### Currently
+
+- **At WolkAbout:** validating industrial IoT ingestion pipelines with a device simulator, integrating OPC device services, and building an agentic AI workflow (LangChain + MCP) that grounds LLMs on live telemetry.
+- **Building:** Analyst, an agentic research engine in Go with hybrid retrieval (BM25 + vector search), MCP integrations and execution sandboxes.
+- **Learning:** orchestration and the big-data stack (Spark, Airflow, Scala).
+
+---
+
+### Selected projects
+
+#### Systems & data
+
+| Project | Description | Stack |
+| :--- | :--- | :--- |
+| [**forkasm**](https://github.com/vasicm4/forkasm) | Sub-millisecond forking of running WebAssembly sandboxes for branching AI agents. | Rust · Wasmtime · Linux |
+| [**hnx-lake**](https://github.com/vasicm4/hnx-lake) | AWS data lake ingesting Hacker News and X streams through a Bronze → Silver → Gold Medallion architecture. | AWS · Python · SQL |
+| [**key-value-engine**](https://github.com/vasicm4/key-value-engine) | LSM-tree storage engine with segmented WAL, memtables, SSTables with Merkle validation, size-tiered compaction, LRU cache, Bloom filter, Count-Min Sketch and HyperLogLog. | Go |
+| [**aegis-iot**](https://github.com/vasicm4/aegis-iot) | Secure IoT ingestion microservices with hybrid encryption, message signing, rate limiting and Byzantine Fault Tolerant consensus to filter faulty sensors. | .NET 8 · Docker · Kubernetes |
+| [**IP-System**](https://github.com/vasicm4/IP-System) | Thread-safe, priority-aware task processing engine built on an async producer–consumer model. | C# |
+
+#### AI, ML & quantitative finance
+
+| Project | Description | Stack |
+| :--- | :--- | :--- |
+| [**pico-gpt**](https://github.com/vasicm4/pico-gpt) | Decoder-only Transformer with hand-written backprop on the GPU: RMSNorm, RoPE, causal Grouped-Query Attention, SwiGLU and AdamW, gradients verified against a PyTorch reference. | Python · CuPy |
+| [**futures-analysis**](https://github.com/vasicm4/futures-analysis) | Ten years of weekly WTI, Brent and NVIDIA prices: white-noise diagnostics (Ljung-Box, ADF, ARCH), AR(1) and random-walk models, half-life analysis and Monte Carlo simulation. Petnica Computational Finance Seminar. | Python · statsmodels |
+| [**portfolio-optimization**](https://github.com/vasicm4/portfolio-optimization) | Parallel genetic algorithm that evolves asset allocations to maximise the Sharpe ratio. | C++ |
+| [**black-box-optimization**](https://github.com/vasicm4/black-box-optimization) | Genetic algorithm that tunes neural-network parameters when the error function has no analytic form. | Python |
+
+#### Backend & full-stack
+
+| Project | Description | Stack |
+| :--- | :--- | :--- |
+| [**visor-inc-voom**](https://github.com/vasicm4/visor-inc-voom) | Cross-platform ride-sharing system with real-time location tracking, driver–passenger matching, JWT auth and end-to-end tests. | Spring Boot · PostgreSQL · WebSockets · Angular |
+| [**chaotic-cupid**](https://github.com/vasicm4/chaotic-cupid) | Real-time matchmaking simulation: a background worker scores and pairs users, and a SignalR hub delivers acknowledged messages. | .NET 9 · SignalR |
+
+Also built: TrustAnchor (X.509 PKI with hierarchical CAs, MFA and RBAC) and Graph Visualiser (plugin-based graph explorer).
+
+---
+
+### In progress
+
+- **Analyst** – agentic research engine for extracting and backtesting econometric strategies
+- **NickelDB** – relational database engine in Rust
+- **Governo** – simulation framework using synthetic populations to help local governments test policy decisions
+- **OmniEMR** – electronic medical records system for a medical office
+
+---
+
+### Toolbox
+
+| Area | Technologies |
 | :--- | :--- |
-| **Languages** | Python, Java, TypeScript, Go |
-| **ML & AI** | PyTorch, NumPy, Transformers, RAG, Genetic Algorithms, LLMs, MCP |
-| **Systems & Architecture** | Distributed Systems, LSM-Trees, Storage Engines, Real-time Systems, Platform Engineering, Cloud Infrastructure (AWS), Event-Driven Architecture |
-| **Development Tools** | Git, Docker, Kubernetes, Linux, CI/CD, .NET Core, SignalR, REST,gRPC |
-| **Databases** | SQL, NoSQL, Key-Value, Relational, LSM, Vector Databases |
-| **Other** | WebSockets, GraphQL, Protocol Buffers, Apache Druid |
-
-### Featured Work
-
-* **aegis-iot** - Aegis IoT is a secure, .NET 8-based distributed microservices system designed for real-time data ingestion, processing, and monitoring from IoT sensor nodes using Docker and Kubernetes. It ensures data integrity and system resilience through robust security features—such as hybrid encryption, message signing, and rate limiting—alongside a Byzantine Fault Tolerant (BFT) consensus service that filters out malicious or faulty sensors.
-* **black-box-optimization** - This project applies a **genetic algorithm** to a BlackBox optimization problem, specifically targeting the optimization of neural network parameters when the error function is unknown in analytic form. Instead of relying on gradient-based methods, the algorithm treats the model as a black box, evaluating candidate solutions only through computed error values.
-* **Graph Visualiser** - A web-based graph exploration and visualization tool built with a plugin-based architecture. Load graphs from multiple data sources (CSV, JSON, XML) and explore them interactively through three synchronized views — Tree, Bird's Eye, and Main — using two distinct visualizer styles.
-* **hnx-lake** - This project involves the implementation of a cloud-based platform for collecting, processing, storing, and analyzing data from social media and blog portals, specifically Hacker News and X (Twitter). Built entirely on AWS, the solution follows the Medallion architecture to manage data flow through distinct stages of refinement
-* **IP-System** - IP-System is a high-performance, thread-safe industrial task processing engine designed for concurrent execution of computational and I/O tasks. Built with an event-driven architecture, it utilizes an asynchronous producer-consumer model to manage high-load industrial workflows with strict priority requirements.
-* **NoSqlDB** - This project implements a **Key-Value storage engine** as a console application. The system supports basic operations and builds upon the **Log-Structured Merge-Tree (LSM)** architecture to ensure efficient data persistence and retrieval.
-* **GAPortfolioOptimization** - GAPortfolioOptimization is a financial engineering tool built in C++ that leverages Genetic Algorithms and parallelism to solve the complex challenge of asset allocation. By simulating the process of natural selection, this tool evolves a population of portfolios to maximize the Sharpe Ratio, effectively balancing risk-adjusted returns.
-* **TrustAnchor PKI System** - TrustAnchor is a PKI system that manages the entire lifecycle of X.509 certificates, featuring Hierarchical CA structure, Secure key management, Certificate generation, renewal, and revocation, Multi-factor authentication (MFA), Role-based access control
-* **Visor Voom** - Visor Voom is a comprehensive ride-share management platform designed to streamline operations for riders, drivers, and administrators. The system provides end-to-end functionality including user authentication, profile management, driver and vehicle administration, ride booking and tracking, real-time communication, routing, reporting, and administrative controls. Built with a microservices-inspired architecture using Spring Boot for the backend and Angular for the frontend, Visor Voom delivers a scalable and maintainable solution for modern transportation services.
-* **PicoGPT** - PicoGPT is a completely transparent, from-scratch implementation of a generative Transformer architecture (nanoGPT) built using pure **NumPy** matrix operations.
-* 
-### Future/in progress projects
-
-* **nickeldb** - NickelDB is a relational database engine built in rust
-* **omni-emr** - OmniEMR is an EMR used in a medical office
-* **Insight Retrieval Synthesis (IRS)** - RAG system designed to analyze the psychology of investing and the "mind" of the market.
-* **governo** - Governo is an AI-powered simulation framework designed to help city councils and local governments make data-driven decisions through Synthetic Populations.
-
-<p align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=vasicm4&show_icons=true&theme=radical&hide_border=true" alt="Maksim's GitHub Stats" />
-</p>
+| **Languages** | Rust · Go · Python · Java · SQL · C++ · C# · TypeScript |
+| **Systems** | WebAssembly · Wasmtime · Linux memory management · concurrency · storage engines |
+| **Data** | ETL · Medallion architecture · PostgreSQL · Apache Druid · time-series analysis · vector databases |
+| **Cloud & infra** | AWS · GCP · Docker · Kubernetes · CI/CD |
+| **Backend** | Spring Boot · .NET Core · gRPC · REST · WebSockets · SignalR |
+| **AI / ML** | PyTorch · NumPy · CuPy · LangChain · MCP · RAG · genetic algorithms |

@@ -29,7 +29,7 @@
 ### Currently
 
 - **At WolkAbout:** validating industrial IoT ingestion pipelines with a device simulator, integrating OPC device services, and building an agentic AI workflow (LangChain + MCP) that grounds LLMs on live telemetry.
-- **Learning:** orchestration and the big-data stack (Spark, Airflow, Scala).
+- **Learning:** core machine learning, computer vision, orchestration and the big-data stack (Spark, Airflow, Scala).
 - **Open source:** merged contribution to [SuperPlane](https://github.com/superplanehq/superplane), an event-driven DevOps control plane.
 
 ---

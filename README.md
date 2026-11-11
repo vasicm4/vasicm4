@@ -40,7 +40,7 @@
 
 | Project | Description | Stack |
 | :--- | :--- | :--- |
-| [**the-analyst**](https://github.com/vasicm4/the-analyst) | CLI research assistant that reads a folder of academic papers, extracts claims into a typed schema with mandatory page pointers, detects contradictions between papers, re-runs headline numbers in a sandbox where data is public, and red-teams every logged conclusion. Bounded ReAct agent, BM25 + vector retrieval written from scratch with reciprocal rank fusion, file-based skills, MCP tool servers and a full eval harness for extraction accuracy, cost and latency. | Go · SQLite · MCP |
+| **the-analyst** | CLI research assistant that reads a folder of academic papers, extracts claims into a typed schema with mandatory page pointers, detects contradictions between papers, re-runs headline numbers in a sandbox where data is public, and red-teams every logged conclusion. Bounded ReAct agent, BM25 + vector retrieval written from scratch with reciprocal rank fusion, file-based skills, MCP tool servers and a full eval harness for extraction accuracy, cost and latency. | Go · SQLite · MCP |
 | [**kws-accent-robustness**](https://github.com/vasicm4/kws-accent-robustness) | Measures the accuracy gap of a 99k-parameter keyword-spotting CNN on 19 consented Serbian-accented speakers versus Speech Commands, with paired speaker-bootstrap CIs. Few-shot fine-tuning recovers 1 point on held-out speakers at no cost on the official set. Shipped as ONNX + FastAPI at 0.19 ms p50 per clip. | PyTorch · MLflow · ONNX · Docker |
 | [**pico-gpt**](https://github.com/vasicm4/pico-gpt) | Decoder-only Transformer with hand-written backprop on the GPU: RMSNorm, RoPE, causal Grouped-Query Attention, SwiGLU and AdamW, gradients verified against a PyTorch reference. | Python · CuPy |
 | [**black-box-optimization**](https://github.com/vasicm4/black-box-optimization) | Genetic algorithm that tunes neural-network parameters when the error function has no analytic form. | Python |
@@ -66,7 +66,7 @@
 
 | Project | Description | Stack |
 | :--- | :--- | :--- |
-| **OmniEMR** | Electronic medical records system for a medical office. | |
+| **OmniEMR** | Electronic medical records system for a medical office. | Go, React, Nginx |
 | [**visor-inc-voom**](https://github.com/vasicm4/visor-inc-voom) | Cross-platform ride-sharing system with real-time location tracking, driver–passenger matching, JWT auth and end-to-end tests. Team project. | Spring Boot · PostgreSQL · WebSockets · Angular |
 | [**chaotic-cupid**](https://github.com/vasicm4/chaotic-cupid) | Real-time matchmaking simulation: a background worker scores and pairs users, and a SignalR hub delivers acknowledged messages. | .NET 9 · SignalR |
 

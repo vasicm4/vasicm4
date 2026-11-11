@@ -66,7 +66,7 @@
 
 | Project | Description | Stack |
 | :--- | :--- | :--- |
-| **OmniEMR** | Electronic medical records system for a medical office. | Go, React, Nginx |
+| **omni-emr** | Electronic medical records system for a medical office. | Go, React, Nginx |
 | [**visor-inc-voom**](https://github.com/vasicm4/visor-inc-voom) | Cross-platform ride-sharing system with real-time location tracking, driver–passenger matching, JWT auth and end-to-end tests. Team project. | Spring Boot · PostgreSQL · WebSockets · Angular |
 | [**chaotic-cupid**](https://github.com/vasicm4/chaotic-cupid) | Real-time matchmaking simulation: a background worker scores and pairs users, and a SignalR hub delivers acknowledged messages. | .NET 9 · SignalR |
 
